@@ -11,3 +11,8 @@ class Medico (models.Model):
     crm = models.CharField(max_length = 40)
     especialidade = models.CharField(max_length = 40)
     idade = models.IntegerField()
+
+class Medicamento (models.Model):
+    nome = models.CharField(max_length = 50)
+    valor = models.DecimalField(max_digits= 20, decimal_places= 2)
+    gravida = models.BooleanField()
